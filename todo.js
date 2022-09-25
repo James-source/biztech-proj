@@ -3,7 +3,7 @@ let task = data;
 
 export function createTask(input) {
   const newList = {
-    Tasks: input.Tasks
+    Task: input.Task
   };
   task.push(newList);
   return task;
@@ -11,7 +11,7 @@ export function createTask(input) {
 
 export function deleteTask(input) {
   task = task.filter((task) => {
-    return task.Tasks !== input.Tasks;
+    return task.Task !== input.Task;
   });
   return task;
 }
